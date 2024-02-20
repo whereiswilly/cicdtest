@@ -1,0 +1,6 @@
+- hosts: master
+  tasks:
+    - name: Copy file to remote host
+      ansible.builtin.copy:
+        src: ~/deploy.yml
+        dest: ~/deploy.yml
