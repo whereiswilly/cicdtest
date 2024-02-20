@@ -17,8 +17,8 @@ pipeline {
     stage('deploy 쿠버네티스') {
       steps {
         sh '''
-        kubectl create deployment pipeline-deploy --image=whereiswilly/cicdtest:green
-        kubectl expose deployment pipeline-deploy --type=LoadBalanver --port=80 --target-port=80 --name=pipeline-deploy
+        kubectl create deployment pipeline-deploy --image=koreapower98/cicdtest:green
+        kubectl expose deployment pipeline-deploy --type=LoadBalanver --port=80 --target-port=80 --name=pipeline-deploy-
 
         '''
       }
